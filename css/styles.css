@@ -151,11 +151,13 @@ text-transform: uppercase;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
 }
 
 .mob-menu {
@@ -166,7 +168,7 @@ text-transform: uppercase;
     background-color: #ffffff;
     top: 0;
     left: 0;
-    padding: 24px 24px 40px 16px;
+    padding: 72px 24px 40px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,6 +207,10 @@ text-transform: uppercase;
 .mob-menu-link:focus {
     color: #404BBF;
 }
+
+ .mob-menu-link.active {
+    color: #404BBF;
+ }
 
 .menu-address-list {
     margin-bottom: 48px;
@@ -612,9 +618,6 @@ letter-spacing: 0.02em;
 max-width: 264px;
 }
 
-.container-soc-link{    
-}
-
 .footer-soc-list {
 display: flex;
 align-items: center;
@@ -745,7 +748,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal {
     width: 288px;
-    height: 623px;
+    min-height: 623px;
     background-color: #FCFCFC;
     border-radius: 4px;
     position: absolute;
@@ -957,6 +960,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {
 .container {
     max-width: 768px;
+    padding-top: 0;
+    padding-bottom: 0;
    }
    
 .header {
@@ -973,6 +978,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .header-address-list {
     display: block;
+}
+
+.header-address-item:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .menu-open-btn {
@@ -1017,6 +1026,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .section-subtitle {
     text-align: start;
    }
+
+.team {
+    padding-left: 108px;
+    padding-right: 108px;
+}
 
 .team-list {
     display: flex;
@@ -1076,7 +1090,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal {
     width: 408px;
-    height: 584px;
+    min-height: 584px;
    }
 }
 
