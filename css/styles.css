@@ -1106,6 +1106,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 40px;
 }
 
+.header-address-item:not(:last-child) {
+    margin-bottom: 0;
+}
+
 .business {
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
